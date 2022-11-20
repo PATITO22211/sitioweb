@@ -29,8 +29,3 @@ body{
 255, 0, 64) 97.84374999999999%);
 }
 
-@keyframes neon{
-    to{
-        transform: translate(50%, 50%);
-    }
-}
