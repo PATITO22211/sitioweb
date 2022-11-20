@@ -28,17 +28,7 @@ body{
 }
 255, 0, 64) 97.84374999999999%);
 }
-.txt_dodge{
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    right: 0;
-    bottom: 0;
-    mix-blend-mode: color-dodge;
-    background: radial-gradient(circle,white,black 35%) 
-                center / 25% 25%;
-    animation: neon 3s linear infinite;
-}
+
 @keyframes neon{
     to{
         transform: translate(50%, 50%);
