@@ -14,18 +14,8 @@ body{
     filter: brightness(300%);
     overflow: hidden;
 }
-.txt{
-    color: #fff;
-    background: #000;
-    font-size: 150px;
-    font-weight: bold;
-}
-.txt:before{
-    content: 'me';
-    position: absolute;
-    mix-blend-mode: difference;
-    filter: blur(2px);
-}
+
+
 255, 0, 64) 97.84374999999999%);
 }
 
