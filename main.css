@@ -21,7 +21,7 @@ body{
     font-weight: bold;
 }
 .txt:before{
-    content: 'me gustas';
+    content: 'me';
     position: absolute;
     mix-blend-mode: difference;
     filter: blur(2px);
