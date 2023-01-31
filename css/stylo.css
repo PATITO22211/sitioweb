@@ -1,0 +1,375 @@
+body {
+  background: #101010;
+  display: block;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ ::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+
+ .fotir {
+               width: 100%;
+    background: #151515;
+    position: fixed;
+    bottom: 0px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+
+        .fotir>* {
+            margin-bottom: 5px;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+.scriptsbtn{
+    margin-top: 10px;
+    color: gray;
+    transition: background-color 0.2s;
+    display: flex;
+    text-decoration: none;
+    background-color: #161616;
+    border-radius: 5px;
+    padding: 2px 7px 2px 7px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ .scriptsbtn:hover {
+            background-color: #232323;
+            cursor: pointer;
+        }
+
+        .scriptsbtn:active {
+            background-color: #1e1e1e;
+            cursor: pointer;
+        }
+
+.button{
+    margin-top: 10px;
+    color: gray;
+    transition: background-color 0.2s;
+    display: flex;
+    text-decoration: none;
+    background-color: #161616;
+    border-radius: 5px;
+    padding: 2px 7px 2px 7px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ .button:hover {
+            background-color: #232323;
+            cursor: pointer;
+        }
+
+        .button:active {
+            background-color: #1e1e1e;
+            cursor: pointer;
+        }
+
+.bod {
+  scroll-behavior: smooth;
+  text-decoration: none;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+
+
+@keyframes escribir {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+span > img {
+  height: 14px;
+  margin-right: 8px;
+}
+
+.texto1 {
+  opacity: 0;
+  animation: escribir 2s forwards;
+}
+
+.texto {
+  opacity: 0;
+  animation: escribir 2s forwards;
+}
+
+
+a {
+  -webkit-user-select: none;
+}
+
+.but {
+  margin-top: 10px;
+  color: gray;
+  transition: background-color 0.2s;
+  display: flex;
+  text-decoration: none;
+  background-color: #161616;
+  border-radius: 5px;
+  padding: 2px 7px 2px 7px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.but:hover {
+  background-color: #232323;
+  cursor: pointer;
+}
+
+.but:active {
+  background-color: #1e1e1e;
+  cursor: pointer;
+}
+a > img {
+  height: 14px;
+  margin-right: 8px;
+}
+.activo {
+  background: #1e1e1e;
+}
+
+.NavBar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  height: 55px;
+  background: #151515;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.NavBar > img {
+  margin-left: 8px;
+  height: 42px;
+  width: 42px;
+}
+
+.NavBar > a {
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  background: #151515;
+  height: 100%;
+  width: 55px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transition: background-color 0.4s;
+}
+
+.NavBar > a:hover {
+  background: #222222;
+}
+
+.downari {
+     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: space-around;
+}
+.butari {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.butari > * {
+  width: 43%;
+}
+
+.colu {
+  display: flex;
+  flex-direction: column;
+}
+.tarjiE {
+  text-align: left;
+  margin: 15px;
+  border-radius: 8px;
+  background: #141414;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  transition: 0.25s ease;
+}
+
+.tarjiE:hover {
+  transform: scale(1.05);
+}
+
+.tarjiE > img {
+  background-color: #131313;
+  width: 300px;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.auti {
+  color: #4a4a4a;
+  font-size: 13px;
+}
+
+.nombre {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.deski {
+  font-size: 14px;
+  color: white;
+}
+
+#contendorScripts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 0px 0px 50px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navItems {
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    padding: 5px;
+    position: absolute;
+    border-radius: 5px;
+    top: 60px;
+    right: 0px;
+    width: 80%;
+    background: #151515;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    opacity: 0;
+    display: none;
+  }
+
+  .inactivo {
+    margin-bottom: 5px;
+    color: gray;
+    text-decoration: none;
+    transition: background-color 0.4s;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px 7px 2px 7px;
+    border-radius: 5px;
+  }
+  .inactivo:hover {
+    background: #222222;
+  }
+
+  .separador {
+    visibility: hidden;
+  }
+
+  .separador1 {
+    width: 100%;
+    background: #222222;
+    height: 1px;
+    margin-bottom: 5px;
+  }
+
+  .discord {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* NavBar */
+  .navItems {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    height: 56px;
+    background: #151515;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .inactivo {
+    margin: 0px 4px 0px 4px;
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    transition: background-color 0.4s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 7px 2px 7px;
+    border-radius: 5px;
+    flex-direction: row;
+  }
+
+  .inactivo:hover {
+    background: #242424;
+  }
+
+  .inactivo:active {
+    background: #1d1d1d;
+  }
+
+  .separador {
+    height: 50%;
+    width: 1px;
+    background: #242424;
+    margin: 0px 8px 0px 8px;
+  }
+
+  .discord {
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+  }
+}
+
+.tarji:hover {
+  transform: scale(1.05);
+}
+
+.visib {
+      border: 1px solid #222222;
+  display: flex;
+  opacity: 1;
+}
