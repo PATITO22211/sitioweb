@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  background-color: #151515;
+  font-family: "Poppins", sans-serif;
+
+}
+
+        ::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+
+@media screen and (min-width: 800px){
+  .app {
+    width: 50%;
+    border-radius: 8px;
+    background-color: #202020;
+    margin: 5% auto;
+  }
+}
+  
+@media screen and (max-width: 800px){
+  .app {
+    width: 90%;
+    border-radius: 1px;
+    background-color: #202020;
+    margin: 5% auto;
+    opacity: 100%;
+  }
+}
+
+
+.down {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+
+
+
+.fondo::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-image: url(https://cdn.discordapp.com/attachments/845687723284889620/1058911989214216232/fantasmita.png);
+  background-size: cover;
+  border-radius: 100%;
+  margin: 20px;
+  position: relative;
+  outline: solid 5px #202020;
+  top: 50%;
+  
+}
+.foto {
+  border: solid 10px #202020;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: 20px;
+  top: -84px;
+}
+
+.i {
+  width: 150px;
+  height: 30px;
+  background-color: #272727;
+  border-radius: 6px;
+}
+.usuarioArea {
+  padding: 20px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.nombre {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.user {
+  color: gray;
+  font-weight: bold;
+  
+}
+
+.infoDiv {
+  padding: 20px;
+  text-align: center;
+}
+.categoria {
+  color: gray;
+
+  z-index: 1;
+  
+  font-weight: normal;
+}
+
+.ln {
+  height: 1px;
+  background-color: #303030;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.descripcion {
+  text-align: left;
+  z-index: 1;
+}
+
+.descSpan {
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
+.linkSPan {
+  font-weight: bold;
+  color: gray;
+  z-index: 1;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+.png {
+  position: absolute;
+  left: 5px;
+  height: 35px;
+  width: 35px;
+}
+.btn {
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background: #272727;
+  border-radius: 6px;
+
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  transition: 0.8s;
+}
+.btnP {
+  margin-top: 0px;
+  margin-right: 5px;
+  padding: 3px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+}
+.btn2 {
+  margin-top: 0px;
+  margin-right: 5px;
+  padding: 3px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+}
+.btn:hover {
+  background: #303030;
+}
+.btn:active {
+  background: #292929;
+}
+.Box {
+      background-color: var(--color-canvas-default);
+    border-color: var(--color-border-default);
+    border-radius: var(--primer-borderRadius-medium, 6px);
+    border-style: solid;
+    border-width: var(--primer-borderWidth-thin, 1px);
+}
+.mt-3 {
+    margin-top: var(--base-size-16, 16px) !important;
+}
+
+
+
+.todo {
+  z-index: 1;
+  padding: 10%;
+  align-items: center;
+    
+}
+
+.fon {
+  width: 100%; /* aumenta el ancho en un 200% */
+  height: auto; /* aumenta la altura en un 200% */
+  z-index: 0;
+  position: fixed;
+  opacity: 60%;
+}
