@@ -1,13 +1,13 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'<i class="texto">Me gusta programar</i>',
-		'<i class="texto">sé: html</i>',
-		'<i class="texto">un poco de JavaScript</i>',
-		'<i class="texto">Python</i>',
-		'<i class="texto">CSS</i>',
-		'<i class="texto">Y estoy aprendiendo sobre C++</i>',
-		'<i class="texto">me gusta más programar en python</i>',
-		'<i class="texto">estoy haciendo un proyecto en python y con linux para controlar una pc remotamente</i>',
+		'<i class="texto">Mi Nombre es Darío</i>',
+		'<i class="texto">Sé programar</i>',
+		'<i class="texto">Html, Js, python, css</i>',
+		'<i class="texto">estoy aprendiendo C++</i>',
+		'<i class="texto">Tengo 13 años</i>',
+		'<i class="texto">Soy de México</i>',
+		'<i class="texto">Me estoy metiendo al campo de las IA</i>',
+		'<i class="texto">eso es todo</i>',
 		'<i class="texto"></i>'
 
 	],
