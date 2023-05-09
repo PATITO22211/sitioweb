@@ -1,5 +1,7 @@
-train: train/images
-val: valid/images
+train: ../train/images
+val: ../valid/images
+test: ../test/images
 
-nc: 1
-names: ['inorganica', 'organica']
+nc: 8
+names: ['Aluminium', 'Carton', 'Glass', 'Organic Waste', 'Paper and Cardboard', 'Plastic', 'Textiles', 'Wood']
+
