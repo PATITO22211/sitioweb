@@ -1,13 +1,6 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: ./train/images
+val: ./valid/images
+test: ./test/images
 
 nc: 8
-names: ['Aluminium', 'Carton', 'Glass', 'Organic Waste', 'Paper and Cardboard', 'Plastic', 'Textiles', 'Wood']
-
-roboflow:
-  workspace: trash-annotation
-  project: trash-classifier
-  version: 1
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/trash-annotation/trash-classifier/dataset/1
+names: ['BIODEGRADABLE', 'CARDBOARD', 'Glass', 'CLOTH', 'PAPER', 'PLASTIC']
