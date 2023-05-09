@@ -3,4 +3,4 @@ val: ./valid/images
 test: ./test/images
 
 nc: 8
-names: ['BIODEGRADABLE', 'CARDBOARD', 'Glass', 'CLOTH', 'PAPER', 'PLASTIC']
+names: ['BIODEGRADABLE', 'CARDBOARD', 'GLASS', 'CLOTH', 'PAPER', 'PLASTIC']
