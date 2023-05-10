@@ -2,5 +2,5 @@ train: ./train/images
 val: ./valid/images
 test: ./test/images
 
-nc: 8
-names: ['BIODEGRADABLE', 'CARDBOARD', 'GLASS', 'CLOTH', 'PAPER', 'PLASTIC']
+nc: 6
+names: ['cigarette butt', 'Trash', 'Organic', 'Paper', 'Plastic', 'Metal']
