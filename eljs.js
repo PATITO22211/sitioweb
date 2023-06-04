@@ -1,6 +1,6 @@
 const typed = new Typed('.typed', {
 	strings: [
-		// '<i class="texto">oye</i>',
+		  '<i class="texto">¿te gustaría regresar?</i>',
     '<i class="texto">¿si?</i>',
 		// '<i class="texto">¿te gustaría ser mi novia?</i>'
 		// '<i class="texto">Python</i>',
