@@ -1,6 +1,6 @@
 const typed = new Typed('.typed', {
 	strings: [
-		  '<i class="texto">¿te gustaría iniciar de nuevo?</i>',
+		  '<i class="texto">Lee el título</i>',
     '<i class="texto">¿si?</i>',
 		// '<i class="texto">¿te gustaría ser mi novia?</i>'
 		// '<i class="texto">Python</i>',
@@ -13,7 +13,7 @@ const typed = new Typed('.typed', {
 	],
 
 	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
-	typeSpeed: 57, // Velocidad en mlisegundos para poner una letra,
+	typeSpeed: 67, // Velocidad en mlisegundos para poner una letra,
 	startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
 	backSpeed: 30, // Velocidad en milisegundos para borrrar una letra,
 	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
