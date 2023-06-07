@@ -2,7 +2,7 @@ const typed = new Typed('.typed', {
 	strings: [
 	'<i class="texto">lee el titulo</i>',
     '<i class="texto">¿si?</i>',
-		// '<i class="texto">¿te gustaría ser mi novia?</i>'
+		// '<i class="texto">¿te gustaría intentarlo?</i>'
 		// '<i class="texto">Python</i>',
 		// '<i class="texto">CSS</i>',
 		// '<i class="texto">Y estoy aprendiendo sobre C++</i>',
