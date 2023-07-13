@@ -1,7 +1,7 @@
 const typed = new Typed('.typed', {
 	strings: [
 		'<i class="mascota">Bienvenid@</i>',
-		'<i class="mascota">Aqui puedes descargar tu Digit Wizzard</i>',
+		'<i class="mascota">Aqui puedes descargar tu ¡Digit Wizzard!</i>',
 		'<i class="mascota">⇣⇣⇣</i>',
 		'<i class="mascota"></i>',
         '<i class="mascota">⇣⇣⇣</i>'
