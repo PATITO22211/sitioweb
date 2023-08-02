@@ -15,11 +15,31 @@
             width: 100%;
             height: 100%;
         }
+        #playButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const divElement = document.querySelector('div');
             const videoElement = document.querySelector('video');
+            const playButton = document.getElementById('playButton');
+
+            playButton.addEventListener('click', () => {
+                videoElement.play().then(() => {
+                    playButton.style.display = 'none'; // Ocultar el botón después de hacer clic en reproducir.
+                }).catch(error => {
+                    console.error('Error al intentar reproducir el video:', error);
+                });
+            });
 
             videoElement.addEventListener('playing', () => {
                 // Solicita el modo de pantalla completa para el div cuando se inicia la reproducción del video.
@@ -38,9 +58,10 @@
 </head>
 <body>
     <div>
-        <video loop autoplay>
+        <video loop playsinline>
             <source src="goofy ahh cats (720p60).mp4" type="video/mp4">
         </video>
+        <button id="playButton">Reproducir</button>
     </div>
 </body>
 </html>
