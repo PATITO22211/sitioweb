@@ -1,0 +1,212 @@
+body{
+  background:#333;
+  background: -webkit-gradient(radial, center center, 120, center center, 900, from(#33495E), to(#2E2329));
+  background:-moz-radial-gradient(circle, #33495E, #2E2329);
+
+}
+.loader{
+  margin:200px auto;
+}
+h1{
+  font-family: 'Actor', sans-serif;
+  color:#FFF;
+  font-size:16px;
+  letter-spacing:1px;
+  font-weight:200;
+  text-align:center;
+}
+.loader span{
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  display:inline-block;
+  position:absolute;
+  left:50%;
+  margin-left:-10px;
+  -webkit-animation:3s infinite linear;
+  -moz-animation:3s infinite linear;
+  -o-animation:3s infinite linear;
+  
+}
+
+
+.loader span:nth-child(2){
+  background:#E84C3D;
+  -webkit-animation:kiri 1.2s infinite linear;
+  -moz-animation:kiri 1.2s infinite linear;
+  -o-animation:kiri 1.2s infinite linear;
+  
+}
+.loader span:nth-child(3){
+  background:#F1C40F;
+  z-index:100;
+}
+.loader span:nth-child(4){
+  background:#2FCC71;
+  -webkit-animation:kanan 1.2s infinite linear;
+  -moz-animation:kanan 1.2s infinite linear;
+  -o-animation:kanan 1.2s infinite linear;
+}
+
+
+@-webkit-keyframes kanan {
+    0% {-webkit-transform:translateX(20px);
+    }
+   
+  50%{-webkit-transform:translateX(-20px);
+  }
+  
+  100%{-webkit-transform:translateX(20px);
+  z-index:200;
+  }
+}
+@-moz-keyframes kanan {
+    0% {-moz-transform:translateX(20px);
+    }
+   
+  50%{-moz-transform:translateX(-20px);
+  }
+  
+  100%{-moz-transform:translateX(20px);
+  z-index:200;
+  }
+}
+@-o-keyframes kanan {
+    0% {-o-transform:translateX(20px);
+    }
+   
+  50%{-o-transform:translateX(-20px);
+  }
+  
+  100%{-o-transform:translateX(20px);
+  z-index:200;
+  }
+}
+
+
+
+
+@-webkit-keyframes kiri {
+     0% {-webkit-transform:translateX(-20px);
+  z-index:200;
+    }
+  50%{-webkit-transform:translateX(20px);
+  }
+  100%{-webkit-transform:translateX(-20px);
+  }
+}
+
+@-moz-keyframes kiri {
+     0% {-moz-transform:translateX(-20px);
+  z-index:200;
+    }
+  50%{-moz-transform:translateX(20px);
+  }
+  100%{-moz-transform:translateX(-20px);
+  }
+}
+@-o-keyframes kiri {
+     0% {-o-transform:translateX(-20px);
+  z-index:200;
+    }
+  50%{-o-transform:translateX(20px);
+  }
+  100%{-o-transform:translateX(-20px);
+  }
+}
+:root{
+  --bgColor : hsla(242, 86%, 6%, 1);
+  --bgColorLight : hsla(242, 86%, 24%, 1);
+  --textColor : hsla(242, 86%, 88%, 1);
+  --textColorDark : hsla(242, 36%, 0%, 1);
+  --paperColor: hsla(242, 86%, 44%, 1);
+  --paperColorDark: hsla(242, 86%, 34%, 1);
+  --shadowColorFaint: hsla(0, 0%, 0%, 0.2);
+}
+
+::selected{
+  color: var(--textColorDark);
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: var(--bgColor);
+  background: linear-gradient(135deg, var(--bgColor), var(--bgColorLight));
+  color: var(--textColor);
+  font-family: 'Saira', sans-serif;
+  position: relative;
+}
+
+*{
+  box-sizing: border-box;
+  transition: all 0.12s cubic-bezier(0.42, 0.54, 0.22, 1.26);
+}
+
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: -10px;
+  width: calc(100% - 20px);
+}
+
+audio.active{
+  bottom: 10px;
+}
+
+#thefile{
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+}
+
+label.file{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  
+  background: var(--paperColor);
+  color: var(--textColor);
+  font-size: 1.25em;
+  font-weight: 700;
+  box-shadow: 0 20px 60px var(--shadowColorFaint);
+
+  cursor: pointer;
+}
+
+
+label.file:hover{
+    background: var(--paperColorDark);
+    transform: translate3d(-50%, -55%, 0);
+}
+
+label.file:active{
+    background: var(--paperColorDark);
+    transform: translate3d(-50%, -45%, 0);
+}
+
+label.file.normal{
+  transform: translate3d(10%, 50%, 0);
+  padding: 0.2rem 2rem;
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+}
