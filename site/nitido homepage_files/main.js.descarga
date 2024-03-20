@@ -1,0 +1,421 @@
+(function($) {
+  "use strict";
+    
+    $(document).ready(function(){
+        
+        $('.menu-item-1885').click(function(){
+            location.href = "https://lynchcafe.pe/category/cafeteria-restaurante/bar/";
+        })
+        
+        $('.menu-item-1886').click(function(){
+            location.href = "https://lynchcafe.pe/category/precocidos-y-congelados/carnes-precocidas/";
+        })
+        
+        $('.menu-item-1887').click(function(){
+            location.href = "https://lynchcafe.pe/category/carniceria-market/cortes-premium/";
+        })
+        
+        /* ------------------------------------ */
+
+        var swiper = new Swiper('#heroSlides', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        allowTouchMove:true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          580: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          980: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }
+        });
+        
+        var swiper = new Swiper('#ambientesSlides', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        allowTouchMove:true,
+        loop:true,
+        autoplay: {
+            delay: 2000,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          580: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          980: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        }
+        });
+        
+        var swiper = new Swiper('.cartaSlides', {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        allowTouchMove:true,
+        loop:true,
+        autoplay: {
+            delay: 2000,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          580: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          980: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        }
+        });
+        
+        var swiper = new Swiper('.metodosSlides', {
+        effect: 'coverflow',
+        slidesPerView: 1,
+        initialSlide: 1,
+        grabCursor: true,
+        centeredSlides: true,
+        coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth:100,
+        modifier: 1,
+        slideShadows: false,
+        },
+        loop:true,
+        autoplay: {
+            delay: 2000,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          580: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          980: {
+            slidesPerView: 3,
+            spaceBetween: 70,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 70,
+          },
+        }
+        });
+        
+        var swiper = new Swiper('#categoriassSlides', {
+     
+        slidesPerView: 1,
+        grabCursor: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          580: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          980: {
+            slidesPerView: 3,
+            spaceBetween: 70,
+          },
+          1280: {
+            slidesPerView: 5,
+            spaceBetween: 70,
+          },
+        }
+        });
+      
+        /* ------------------- Scroll header ----------------- */
+        
+         if ($(window).scrollTop() >= 50) {
+                $('#home-header').addClass('fixed-header');
+                $('#submenu-sticky').addClass('active');
+                
+            }
+            else {
+                $('#home-header').removeClass('fixed-header');
+                 $('#submenu-sticky').removeClass('active');
+            }
+      
+        $(window).scroll(function(){
+            if ($(window).scrollTop() >= 50) {
+                $('#home-header').addClass('fixed-header');
+                $('#submenu-sticky').addClass('active');
+                
+            }
+            else {
+                $('#home-header').removeClass('fixed-header');
+                 $('#submenu-sticky').removeClass('active');
+            }
+        });
+    
+        /* ------------------- Barra de rogreso ----------------- */
+              
+        window.onscroll = function () { verticalScrollShowProgress() };
+        function verticalScrollShowProgress() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("scroll-progress-bar").style.width = scrolled + "%";
+        }
+        
+        $('body').scrollspy({
+              target: '#nav-carta',
+              offset: 10
+            });
+            
+            /* ------------------ Animacion anchor link ----------------- */
+            
+        $(function () {
+                $('a.page-scroll').bind('click', function (event) {
+                    var $anchor = $(this);
+                        $('html, body').stop().animate({
+                            scrollTop: ($($anchor.attr('href')).offset().top)
+                        }, 1000, 'easeInOutExpo');
+                    event.preventDefault();
+                });
+            });
+            
+        /* ------------------------------------------------------ */
+        
+        
+         halkaBox.run("gallery1", {
+            animation: "fade",
+            theme: "dark",
+            hideButtons: false,
+            preload: 0
+        });
+        
+    });
+    
+    /* ------------------- Sidebar animacion toggle ----------------- */
+    
+        const banner = document.querySelector("#bannerBg");
+        const bannerAddition = document.querySelector("#bannerBgAddition");
+        const toggleLine = $('.toggle-line');
+        const logoM = $('#logo-m');
+        const logoO = $('#logo-o');
+        const logDot = $('#logo-dot');
+        
+        
+        const bannerTL =  new TimelineMax();
+    
+        bannerTL
+          .from([bannerAddition, banner], {
+            duration: 1.2,
+            height: 0,
+            ease: "power3.inOut",
+            stagger: {
+              amount: 0.2
+            }
+          })
+          .from('.banner .navbar-nav li', {
+              
+              duration: 1.2,
+              opacity:0,
+              ease: "power3.inOut",
+              stagger: {
+                  amount: 0.2
+              }
+              
+          },0.3,0.2);
+     
+        bannerTL.reverse();
+        
+        /* ------------------- Toggle sidebar ----------------- */
+    
+        $(document).on("click", ".menu-bar-icon", function() {
+            bannerTL.reversed(!bannerTL.reversed());
+            bannerTL.set(".banner", {  pointerEvents: "auto" });
+            bannerTL.set(toggleLine, {  backgroundColor: "white" },.1);
+            bannerTL.set("#logo-m", {  fill: "white" },.1);
+            bannerTL.set("#logo-o", {  fill: "white" },.1);
+            bannerTL.set("#logo-dot", {  fill: "#ef8084" },.1);
+            $(".menu-toggle").toggleClass("on");
+            /*$(".header").toggleClass("on");*/
+            
+        });
+        
+        /* ------------------- Toggle sidebar al seleccionar opcion ----------------- */
+      
+        $(document).on("click", ".banner-content a", function() {
+            bannerTL.reversed(!bannerTL.reversed());
+            bannerTL.set(".banner", {  pointerEvents: "auto" });
+            $('.menu-toggle').toggleClass("on");
+        });
+        
+        /* ------------------------------------ */
+        
+        jQuery(document).ready(function($){
+            	if(document.title=='Sobre nosotros – Lynch'){
+            	    $(".nosotros-nav").addClass("nav-item active");
+            	}
+            	
+            	if(document.title=='Lynch – Café para volar'){
+            	    $(".home-nav").addClass("nav-item active");
+            	}
+            	
+            	if(document.title=='Reservas – Lynch'){
+            	    $(".reservas-nav").addClass("nav-item active");
+            	}
+            	
+            	if(document.title=='Contáctanos – Lynch'){
+            	    $(".contacto-nav").addClass("nav-item active");
+            	}
+            	
+            	if(document.title=='Cafetería restaurante – Lynch'){
+            	    $(".carta-nav").addClass("nav-item dropdown active");
+            	}
+            	
+            	if(document.title=='Carnicería & Market – Lynch'){
+            	    $(".carta-nav").addClass("nav-item dropdown active");
+            	}
+            	
+            	if(document.title=='Precocidos y congelados – Lynch'){
+            	    $(".carta-nav").addClass("nav-item dropdown active");
+            	}
+                 
+                }); 
+
+    /*---------------------Animaciones --------------------- */
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        
+        console.log("DOM loaded");
+        
+        window.addEventListener("load", function(e) {
+            
+            const loaderAddition = document.querySelector("#loaderBgAddition");
+            const loader = document.querySelector("#loaderBg");
+            const loaderContainer = document.querySelector(".loader");
+            const letraO = document.querySelector(".preloader");
+            const header= document.querySelector("#home-header");
+            const loaderTL =  new TimelineMax();
+            const menu =  document.querySelector("#submenu-sticky");
+        
+            loaderTL
+            .to([loader, loaderAddition], {
+            duration: 1.2,
+            height: 0,
+            width: "100%",
+            ease: "power3.inOut",
+            stagger: {
+                    amount: 0.2
+                }
+            });
+            
+            
+            TweenMax.to(letraO, {
+                duration:1,
+                opacity:0,
+                ease: "power3.inOut"
+            });
+            
+             TweenMax.to(header, {
+                delay: 1,
+                y: 0,
+                opacity:1,
+                duration: 0.8,
+                ease: "power3.inOut"
+              });
+              TweenMax.to(menu, {
+                delay: 1,
+                y: 0,
+                opacity:1,
+                duration: 0.8,
+                ease: "power3.inOut"
+              });
+            //   TweenMax.to('#cookie-notice', {
+            //   delay: 1,
+            //     opacity:1,
+            //     duration: 0.8,
+            //     ease: "power3.inOut"
+            //   });
+              
+              
+            
+            
+            
+            loaderTL.set(loaderContainer, {  pointerEvents: "none" }, "start");
+            
+            /*--------------------- Parallax --------------------- */
+    
+            let controller = new ScrollMagic.Controller();
+        
+            let timeline = new TimelineMax();
+            timeline
+            .to('.coffe-image-liquid', 10, {
+                y: 20
+            }).to('.coffe-image-cup', 10, {
+                y: -70
+            }, '-=6');
+        
+            let scene = new ScrollMagic.Scene({
+                triggerElement: '#section-coffe',
+                duration: '150%',
+                triggerHook: 1
+            })
+            .setTween(timeline)
+            .setPin('section')
+            .addTo(controller);
+            
+            /*--------------------- Menu recetas --------------------- */
+            
+            
+           /* let sceneRecetas = new ScrollMagic.Scene({
+                
+                triggerElement: '#submenu-recetas',
+                reverse: true,
+                triggerHook: 0, 
+                offset: 203
+            })
+            .setClassToggle("#submenu-sticky", "active") // add class toggle
+            /*.addIndicators({
+                colorTrigger: "red",
+                colorStart: "red",
+                colorEnd: "red"
+              })*/
+            //.addTo(controller);
+        
+        }, false);
+        
+         
+            
+    })
+        
+  
+
+})(jQuery);
