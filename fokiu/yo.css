@@ -26,7 +26,7 @@ body {
 @media screen and (max-width: 800px){
   .app {
     width: 90%;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #202020;
     margin: 5% auto;
   }
@@ -41,7 +41,7 @@ body {
   width: 100%;
   height: 7cm;
   border-radius: 8px 8px 0px 0px;
-  background-image: url(https://psodt.xyz/fokiu/banner.webp);
+  background-image: url(https://psodt.xyz/fokiu/banner2.webp);
   background-size: cover;
 }
 
@@ -160,21 +160,27 @@ a {
 }
 
 a:hover {
-  color: #003366;
-  font-size: 30px;
+  color: #ff5353;
+  font-size: 25px;
   transition: color 0.3s, font-size 0.3s;
   animation: rainbowText 4s;
 }
 @keyframes rainbowText {
 
   0% {
-    color: #0088FF;
+    color: #f83333;
   }
   20% {
-    color: #004181; /* Color después del 20% de la animación */
+    color: #7b6cff; /* Color después del 20% de la animación */
   }
-  100% {
-    color: #003366; /* Color final */
+  40% {
+    color: #ff58ab;
+  }
+  60% {
+    color: #ff3098;
+  }
+  80% {
+    color: #fca9d2; /* Color final */
   }
 }
 
@@ -191,6 +197,7 @@ a:hover {
   color: white;
   background: #272727;
   border-radius: 6px;
+  font-family:'Times New Roman', Times, serif;
 
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
 
@@ -209,7 +216,7 @@ a:hover {
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
 }
 .btn:hover {
-  background: #303030;
+  background: #494949;
 }
 .btn:active {
   background: #292929;
