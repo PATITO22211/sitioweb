@@ -3,7 +3,7 @@ const typed = new Typed('.typed', {
 		'<i class="texto">México</i>',
 		'<i class="texto">Mid</i>',
 		'<i class="texto">@da_rio.patito</i>',
-		'<i class="texto">Al final siempre tiene que haber lluvia para que las flores puedan florecer.</i>',
+		'<i class="texto">Siempre tiene que haber lluvia para que las flores puedan salir.</i>',
 		'<i class="texto">JGHD</i>',
 		'<i class="texto">. . .</i>',
 	],
