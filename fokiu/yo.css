@@ -1,9 +1,88 @@
+/*TODO: INICIO DE IMPORTAR FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini&family=Pacifico&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini&family=Nova+Mono&family=Pacifico&family=Permanent+Marker&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini&family=Nova+Mono&family=Pacifico&family=Permanent+Marker&family=Rowdies:wght@300;400;700&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini&family=Nova+Mono&family=Pacifico&family=Permanent+Marker&family=Rock+Salt&family=Rowdies:wght@300;400;700&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jaini&family=Nova+Mono&family=Pacifico&family=Permanent+Marker&family=Rock+Salt&family=Rowdies:wght@300;400;700&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Honk&family=Jaini&family=Nova+Mono&family=Pacifico&family=Permanent+Marker&family=Rock+Salt&family=Rowdies:wght@300;400;700&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Dosis:wght@200..800&family=Honk&family=Jaini&family=Nova+Mono&family=Pacifico&family=Permanent+Marker&family=Rock+Salt&family=Rowdies:wght@300;400;700&family=Sedgwick+Ave+Display&display=swap');
+
+
+.codystar-light {
+  font-family: "Codystar", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.codystar-regular {
+  font-family: "Codystar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sedgwick-ave-display-regular {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  
+  font-style: normal;
+}
+.nova-mono-regular {
+  font-family: "Nova Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.rowdies-light {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rowdies-regular {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jaini-regular {
+  font-family: "Jaini", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/*TODO: FIN DE IMPORTAR FONTS */
+
 body {
   margin: 0;
   background-color: #151515;
   font-family: "Poppins", sans-serif;
 }
+
 
         ::-webkit-scrollbar {
             width: 0;
@@ -39,9 +118,9 @@ body {
 
 .fondo {
   width: 100%;
-  height: 7cm;
+  height: 7.4cm;
   border-radius: 8px 8px 0px 0px;
-  background-image: url(https://psodt.xyz/fokiu/banner2.webp);
+  background-image: url(https://psodt.xyz/fokiu/banner3.webp);
   background-size: cover;
 }
 
