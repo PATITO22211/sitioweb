@@ -129,7 +129,8 @@ body {
   display: block;
   width: 150px;
   height: 150px;
-  background-image: url(https://psodt.xyz/fokiu/Captura%20de%20pantalla%202024-05-10%20135830.png);
+/*   https://psodt.xyz/fokiu/Captura%20de%20pantalla%202024-05-10%20135830.png */
+  background-image: url(https://psodt.xyz/fokiu/me.webp);
   background-size: cover;
   border-radius: 100%;
   margin: 20px;
