@@ -239,27 +239,27 @@ a {
 }
 
 a:hover {
-  color: #ff5353;
+  color: #ff57ab;
   font-size: 25px;
   transition: color 0.3s, font-size 0.3s;
-  animation: rainbowText 4s;
+  animation: rainbowText 2.5s;
 }
 @keyframes rainbowText {
 
   0% {
     color: #f83333;
   }
-  20% {
+  25% {
     color: #7b6cff; /* Color después del 20% de la animación */
   }
   40% {
-    color: #ff58ab;
+    color: #3f29ff;
   }
   60% {
-    color: #ff3098;
+    color: #ff2974;
   }
   80% {
-    color: #fca9d2; /* Color final */
+    color: #ffc2d7; /* Color final */
   }
 }
 
