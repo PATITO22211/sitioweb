@@ -6,10 +6,10 @@ const typed = new Typed('.typed', {
 		'<i class="texto">Siempre tiene que haber lluvia para que las flores puedan salir.</i>',
 		// '<i class="texto">why are you here??</i>',
 		'<i class="texto">. . .</i>',
-		'<i class="texto">I think Im falling in love</i>',
-		"<i class='texto'>I think she's perfect</i>",
-		"<i class='texto'>but don't say anything...</i>",
-		"<i class='texto'>🤫</i>",
+		// '<i class="texto">I think Im falling in love</i>',
+		// "<i class='texto'>I think she's perfect</i>",
+		// "<i class='texto'>but don't say anything...</i>",
+		// "<i class='texto'>🤫</i>",
 
 
 
