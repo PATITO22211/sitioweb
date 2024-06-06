@@ -18,8 +18,6 @@ const typed = new Typed('.typed', {
 		"<i class='texto'>I hate people called alex, not all but some of them...</i>",
 		"<i class='texto'>I'm going to be the money man</i>",
 		"<i class='texto'>₯←</i>",
-		"<i class='texto'>Fuck that shit la nueva ola</i>",
-		"<i class='texto'>Ya conoces mi arroba</i>",
 
 
 	],
