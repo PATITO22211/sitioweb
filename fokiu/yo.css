@@ -172,7 +172,7 @@ body {
 }
 
 .user {
-  color: gray;
+  color: rgb(209, 5, 83);
   font-weight: bold;
 }
 
@@ -195,8 +195,17 @@ body {
 
 .descripcion {
   text-align: left;
+} 
+.descripcion2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
-
+.descripcion3 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
 .descSpan {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
