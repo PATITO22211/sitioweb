@@ -82,18 +82,18 @@
 			<span class="categoria" style="font-family: dosis; font-size: larger;">Información</span>
 			<div class="descripcion down">
 				<div class="ln"></div>
-					<span class="user"  style="font-size: 20px; font-family: Rowdies;" id="principal"><span class="typed"></span></span>
+					<span class="user" style="font-size: 20px; font-family: Rowdies;" id="principal"><span class="typed"></span></span>
 					<span class="descSpan" style="font-size: 20px; font-family: JAINI;">he/him</span>
 					<span class="descSpan" style="font-size: 15px; font-family: poetsen-one;">"4 eyes"</span>
 					<span class="descSpan" style="font-size: 15px; font-family: Permanent Marker;">14 yo</span>
-				<span class="descSpan" style="font-size: 15px; font-family: poetsen-one;">'im trying to fix it'</span>
-				<!-- <span class="descSpan" style="font-size: 15px; font-family: poetsen-one;">a</span> -->
+					<span class="descSpan" style="font-size: 15px; font-family: poetsen-one;">'im trying to fix it'</span>
+					<!-- <span class="descSpan" style="font-size: 15px; font-family: poetsen-one;">a</span> -->
 				
 
 
 					<span class="descSpan" style="font-size: 20px; font-family: JAINI;">......</span>
 				
-				<span class="descSpan" style="font-size: 8.5px; font-family:rocksalt;">Last Update: 5/6/2024</span>
+				<span class="descSpan" style="font-size: 8.5px; font-family:rocksalt;">Last Update: 6/5/2024</span>
 				
 					<div class="ln"></div>
 					<a href="https://dxrio.net" class="linkSPan" style="font-family: Sedgwick Ave Display;">D X R I O . NET</a>
@@ -103,7 +103,56 @@
 
 					<span class="descSpan" style="font-size: 9px; grid-column:initial;">© sitio hecho por Dario</span>
 
+			</div>
+					<div class="ln" id="galeria"></div> 	
+					<script src="./fokiu/jajajajaj.js"></script>
+					<span class="categoria" id="galeria" style="font-family: dosis; font-size: larger;">Galería</span>
+					<div class="photos">
+						<a href=""></a>
+						<img id="img1" src="./fokiu/gallery/IMG_1210.jpg" alt="Image description 2">
+						<img id="img2" src="https://dxrio.net/fokiu/pato.png" alt="Image description 1">
+						<img id="img3" src="./fokiu/gallery/IMG_1380.jpg" alt="Image description 2">
+						<!-- <img src="https://raw.githubusercontent.com/PATITO22211/sitioweb/main/fokiu/me2.webp" alt="Image description 2"> -->
+						<img id="img4" src="./fokiu/gallery/IMG_1455.jpg" alt="Image description 2">
+						<img id="img5" src="./fokiu/gallery/028d46f1-d95a-4003-a1cb-d33e8d9ceb9f.jpg" alt="Image description 2">
+						<img id="img6" src="./fokiu/gallery/IMG_3032.jpg" alt="Image description 2">
+						<img id="img7" src="./fokiu/gallery/IMG_1994.jpg" alt="Image description 2">
+						<img id="img8" src="./fokiu/gallery/IMG_3037.jpg" alt="Image description 2">
+					</div>
+					<div id="imageModal" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="imgModal">
+					</div>
+
+
+					<script>
+						// Get the modal
+						var modal = document.getElementById('imageModal');
+					
+						// Get the image and insert it inside the modal - use its "alt" text as a caption
+						var modalImg = document.getElementById("imgModal");
+						var images = document.querySelectorAll('.photos img');
+						images.forEach(image => {
+							image.onclick = function(){
+								modal.style.display = "block";
+								modalImg.src = this.src;
+							}
+						});
+					
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+					
+						// When the user clicks on <span> (x), close the modal
+						span.onclick = function() { 
+							modal.style.display = "none";
+						}
+					</script>
+					
+						
+					
+					
 					<div class="ln"></div> 	
+
 			
 				<!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1WbhIxkn5ECsOwUm795iX1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
 			    <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4feXcsElKIVsGwkbnTHAfV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>  -->
@@ -112,34 +161,34 @@
 				
 
 
-            <div class="ln" style="margin-bottom: 40px;"></div>
-			</div>
+        		 <div class="ln" style="margin-bottom: 40px;"></div>
+
 
 			<span class="categoria" style="font-family: dosis; font-size: larger;">Social</span>
 			
-         <a href="https://www.instagram.com/da_rio.patito/" class="btn" target="_blank">
+			<a href="https://www.instagram.com/da_rio.patito/" class="btn" target="_blank">
 			<img class="png" src="./fokiu/instagram_padded.png" alt="">
 			Instagram</a>
 			
-         <a href="https://www.threads.net/@da_rio.patito" class="btn" target="_blank">
+			<a href="https://www.threads.net/@da_rio.patito" class="btn" target="_blank">
 			<img class="png" src="./fokiu/icons8-hilos-96.png" alt="">
 			Threads</a>
-		 
-		<a href="https://discord.com/users/822245773772193792" class="btn" target="_blank">
-			<img class="png" src="./fokiu/discord_padded.png" alt="">
-			Discord</a>
-
-			
-		<a href="https://www.youtube.com/@Dariossswsss" class="btn" target="_blank">
-			<img class="png" src="./fokiu/youtube_padded.png" alt="">
-			Youtube (ya no existe 🥺)</a>
-
-<!-- 
-		<a href="https://discord" class="btn" target="_blank">
-			<img class="png" src="./fokiu/icons8-izquierda-2-100.png" alt="">
-			contáctame</a> -->
 				
-			</div>
+			<a href="https://discord.com/users/822245773772193792" class="btn" target="_blank">
+				<img class="png" src="./fokiu/discord_padded.png" alt="">
+				Discord</a>
+
+				
+			<a href="https://www.youtube.com/@Dariossswsss" class="btn" target="_blank">
+				<img class="png" src="./fokiu/youtube_padded.png" alt="">
+				Youtube (ya no existe 🥺)</a>
+
+			<!-- 
+			<a href="https://discord" class="btn" target="_blank">
+				<img class="png" src="./fokiu/icons8-izquierda-2-100.png" alt="">
+				contáctame</a> -->
+				
+		</div>
 
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script><script src="fokiu\jajajajaj.js"></script>
