@@ -86,7 +86,7 @@
 
 body {
   margin: 0;
-  background-color: #151515;
+  background-color: #151515b1;
   font-family: "Poppins", sans-serif;
 }
 
@@ -215,6 +215,112 @@ body {
   font-weight: bold;
   color: gray;
 }
+.photos {
+  display: flex;
+  flex-wrap: wrap; /* This wraps images to the next line when space is limited */
+  justify-content: space-around;
+  
+  margin: 0 auto; /* This centers the gallery horizontally */
+}
+
+.photos img {
+  margin: 1px; /* Add some margin between images */
+  object-fit: cover; /* This resizes the image to fit the container while maintaining aspect ratio */
+}
+
+/* Optional media queries for responsiveness on smaller screens  */
+@media screen and (max-width: 320px) {
+  .photos img {
+    display: none;
+    /* width: 0px;
+    height: 0px; */
+  }
+  #galeria {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .photos img {
+    max-width: 90px; /* Adjust image width for smaller screens */
+    
+  }
+}
+
+
+@media screen and (min-width: 425px) {
+  .photos img {
+    max-width: 110px;
+    min-width: 90px; /* Make images fill the width on very small screens */
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 60%; /* Adjusted size */
+  max-width: 500px; /* Adjusted size */
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px; /* Adjusted size */
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  color: #f1f1f1;
+  font-size: 100px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
