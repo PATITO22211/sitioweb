@@ -328,7 +328,7 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   user-select: none;
   -webkit-user-select: none;
-  background-image: linear-gradient(to right, #00ff6a, #00bbff, #9000ff, #ffffff, #ff0000, #00ff80, #00ff6a); /* Definir un gradiente horizontal de colores */
+  background-image: linear-gradient(to right, #4000ff, #00bbff, #9000ff, #ffffff, #ff0000, #ff00ee, #ff0037); /* Definir un gradiente horizontal de colores */
   -webkit-background-clip: text;
   color: transparent; /* Hacer el texto transparente */
   background-size: 200% 100%; /* Asegurarse de que el gradiente sea el doble de ancho del área de texto */
@@ -339,7 +339,6 @@ a {
   animation: rainbowBackground 5s linear infinite; /* Aplicar la animación "rainbowBackground" durante 5 segundos, repetir infinitamente */
 
 }
-
 .vp {
   font-family: rowdies;
 }
