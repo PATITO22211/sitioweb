@@ -11,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Dosis:wght@200..800&family=Honk&family=Jaini&family=Nova+Mono&family=Pacifico&family=Permanent+Marker&family=Rock+Salt&family=Rowdies:wght@300;400;700&family=Sedgwick+Ave+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@900&display=swap');
 
 .poetsen-one-regular {
   font-family: "Poetsen One", sans-serif;
@@ -148,10 +149,10 @@ body {
   background-size: 90%;
   background-position: 100%;
   border-radius: 100%;
-  margin: 20px;
+  margin: 25px;
   position: relative;
   outline: solid 5px #202020;
-  top: 50%;
+  top: 59%;
 }
 .foto {
   border: solid 10px #202020;
@@ -169,11 +170,51 @@ body {
   background-color: #272727;
   border-radius: 6px;
 }
+.usuariosContainer {
+  display: flex;
+  gap: 10px; /* Espacio entre los elementos, puedes ajustarlo según sea necesario */
+}
+
 .usuarioArea {
   padding: 20px;
   margin-top: 10px;
+  flex: 1; /* Permite que el elemento ocupe el espacio disponible */
 }
 
+.usuarioArea2 {
+  place-items: center;
+  perspective: 20000px;
+  padding: 20px;
+  margin-top: 10px;
+  flex: 1; /* Permite que el elemento ocupe el espacio disponible */
+}
+.zigzag {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: zigzag 16s infinite linear;
+  
+  i {
+    --color: hsl(200 100% calc(var(--i) * 5% + 20%));
+    position: absolute;
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    padding-inline: 24px;
+    background-image: 
+      linear-gradient(45deg, transparent 30%, var(--color) 0 36%, transparent 0),
+      linear-gradient(-45deg, transparent 30%, var(--color) 0 36%, transparent 0);
+    background-size: 16px 8px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: translate3d(-50%, -50%, calc(var(--i) * 1px));
+  }
+}
+
+@keyframes zigzag {
+  from { transform: rotate(0deg) rotateX(30deg) rotate(360deg); }
+  to { transform: rotate(360deg) rotateX(30deg) rotate(0deg); }
+}
 .nombre {
   color: rgb(194, 255, 157);
   font-weight: bold;
