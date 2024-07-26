@@ -136,7 +136,7 @@ body {
   width: 100%;
   height: 7.4cm;
   border-radius: 8px 8px 0px 0px;
-  background-image: url(https://raw.githubusercontent.com/PATITO22211/sitioweb/main/fokiu/banner5.webp);
+  background-image: url(https://raw.githubusercontent.com/PATITO22211/sitioweb/main/fokiu/banner6.webp);
   background-size: cover;
 }
 
@@ -145,9 +145,11 @@ body {
   display: block;
   width: 150px;
   height: 150px;
-  background-image: url(https://raw.githubusercontent.com/PATITO22211/sitioweb/main/fokiu/me3.jpg);
-  background-size: 90%;
-  background-position: 100%;
+  background-image: url(https://raw.githubusercontent.com/PATITO22211/sitioweb/main/fokiu/cincon4.png);
+  background-size: 113%;
+  /* background-position:50%; */
+  background-position-x: center;
+  background-position-y: 80%;
   border-radius: 100%;
   margin: 25px;
   position: relative;
@@ -174,6 +176,11 @@ body {
   display: flex;
   gap: 10px; /* Espacio entre los elementos, puedes ajustarlo según sea necesario */
 }
+.musicContainer {
+
+  display: flex;
+  gap: 10px; /* Espacio entre los elementos, puedes ajustarlo según sea necesario */
+}
 
 .usuarioArea {
   padding: 20px;
@@ -184,7 +191,7 @@ body {
 .usuarioArea2 {
   place-items: center;
   perspective: 20000px;
-  padding: 20px;
+  padding: 10px;
   margin-top: 10px;
   flex: 1; /* Permite que el elemento ocupe el espacio disponible */
 }
@@ -198,7 +205,7 @@ body {
     position: absolute;
     font-family: "Prompt", sans-serif;
     font-weight: 900;
-    font-size: 70px;
+    font-size: 67px;
     padding-inline: 24px;
     background-image: 
       linear-gradient(45deg, transparent 30%, var(--color) 0 36%, transparent 0),
@@ -268,10 +275,43 @@ body {
   font-size: 20px;
 }
 
+.cuadro3 {
+  /* margin: 10px; */
+  border: solid 1px #72ffea;
+  font-family: "teko";
+  border-radius: 20px;
+  padding: 10px;
+  width: 99%;
+  height: 10%;
+  background-color: #202020;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.descSpan2 {
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+.gif {
+  position:relative;
+  bottom: 100%;
+  
+  /* transform: scaleX(-1); */
+  width: 10px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  z-index: 999;
+}
+
 
 .ln {
-  height: 1px;
-  background-color: #4f4478;
+  height: 1.5px;
+  
+  background-color: #2c00cb;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -434,7 +474,7 @@ body {
 }
 
 .infomodal.show .infomodal-content {
-  transform: scale(1);
+  transform: scale(1.6);
   opacity: 1;
 }
 
