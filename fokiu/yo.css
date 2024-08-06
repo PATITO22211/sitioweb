@@ -145,11 +145,12 @@ body {
   display: block;
   width: 150px;
   height: 150px;
-  background-image: url(https://raw.githubusercontent.com/PATITO22211/sitioweb/main/fokiu/cincon4.png);
-  background-size: 113%;
-  /* background-position:50%; */
+  background-image: url(https://raw.githubusercontent.com/PATITO22211/sitioweb/main/fokiu/gallery/20240727_172233422_iOS.jpg);
+  background-size: 100%;
+  /* background-position:20%; */
+
   background-position-x: center;
-  background-position-y: 80%;
+  background-position-y: 9%;
   border-radius: 100%;
   margin: 25px;
   position: relative;
@@ -223,13 +224,13 @@ body {
   to { transform: rotate(360deg) rotateX(30deg) rotate(0deg); }
 }
 .nombre {
-  color: rgb(194, 255, 157);
+  color: rgb(0, 110, 255);
   font-weight: bold;
   font-size: 24px;
 }
 
 .user {
-  color: rgb(189, 86, 125);
+  color: rgb(225, 96, 96);
   font-weight: bold;
 }
 
@@ -336,7 +337,7 @@ body {
 }
 .linkSPan {
   font-weight: bold;
-  color: #ee5c5c;
+  color: #835cee;
 }
 .photos {
   display: flex;
@@ -538,7 +539,7 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   user-select: none;
   -webkit-user-select: none;
-  background-image: linear-gradient(to right, #4000ff, #00bbff, #9000ff, #ffffff, #ff0000, #ff00ee, #ff0037); /* Definir un gradiente horizontal de colores */
+  background-image: linear-gradient(to right, #4000ff, #000000, #9000ff, #000000, #000000, #0b0b0b, #ff0037); /* Definir un gradiente horizontal de colores */
   -webkit-background-clip: text;
   color: transparent; /* Hacer el texto transparente */
   background-size: 200% 100%; /* Asegurarse de que el gradiente sea el doble de ancho del área de texto */
@@ -586,16 +587,16 @@ a:hover {
 @keyframes rainbowText {
 
   0% {
-    color: #f83333;
+    color: #ea00ff;
   }
   25% {
-    color: #7b6cff; /* Color después del 20% de la animación */
+    color: #cacaca; /* Color después del 20% de la animación */
   }
   40% {
-    color: #3f29ff;
+    color: #232323;
   }
   60% {
-    color: #ff2974;
+    color: #bababa;
   }
   80% {
     color: #ffc2d7; /* Color final */
